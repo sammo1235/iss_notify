@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: iss_notify_production
+  username: iss_notify
+  password: <%= ENV['ISS_NOTIFY_DATABASE_PASSWORD']
