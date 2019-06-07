@@ -24,4 +24,4 @@ production:
   <<: *default
   database: iss_notify_production
   username: iss_notify
-  password: <%= ENV['ISS_NOTIFY_DATABASE_PASSWORD']
+  password: <%= ENV['ISS_NOTIFY_DATABASE_PASSWORD'] %>
