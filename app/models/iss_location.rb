@@ -1,5 +1,3 @@
-require 'HTTParty'
-
 class IssLocation
   include HTTParty
   base_uri 'http://api.open-notify.org'

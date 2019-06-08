@@ -1,5 +1,3 @@
-require 'HTTParty'
-
 class MyLocation
   include HTTParty
   base_uri 'http://api.ipstack.com'
