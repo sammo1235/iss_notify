@@ -8,11 +8,10 @@ gem 'puma', '~> 3.11'
 gem 'httparty'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bundler', '>= 2.0.1'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
-end
-group :development, :test do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
