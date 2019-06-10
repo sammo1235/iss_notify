@@ -1,8 +1,8 @@
 desc "Task for Heroku scheduler: email when in_range? == true"
 task :in_range? => :environment do
-  if MyLocation.new.in_range?(Isslocation.new)
+  if MyLocation.new.in_range?(IssLocation.new)
     IssNotifyMailer.send_notify_email("samrhysperry93@hotmail.co.uk").deliver
   else
-    "don't"
+    puts "Iss not above"
   end
 end
