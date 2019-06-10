@@ -12,8 +12,8 @@ class MyLocation
   end
   
   def in_range?(other)
-    iss_lat = other.iss_coords.first
-    iss_long = other.iss_coords.last
+    iss_lat = other.my_coords.first
+    iss_long = other.my_coords.last
     my_coords.first.between?(iss_lat - 5, iss_lat + 5) && my_coords.last.between?(iss_long - 5, iss_long + 5)
   end
 end
