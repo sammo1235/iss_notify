@@ -5,7 +5,7 @@ describe "Task for Heroku scheduler: email when in_range? == true", type: :task 
   let(:iss_loc) { [23.903, 144.2339] }
   
   context "email sent because iss is in range" do
-    it "sends email and puts sending email" do
+    xit "sends email and puts sending email" do
       expect(my_loc.in_range?(iss_loc)).to be true
     end
   end
